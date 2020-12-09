@@ -1,0 +1,2047 @@
+fileFormatVersion: 2
+guid: 4a8175b9ca7d02b43a66cfa6058d40e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5772709891502861102
+    second: FuzzyAnimation_0
+  - first:
+      213: 2217398741868754801
+    second: FuzzyAnimation_1
+  - first:
+      213: 569083544902484535
+    second: FuzzyAnimation_2
+  - first:
+      213: -7605433671338950832
+    second: FuzzyAnimation_3
+  - first:
+      213: -3881744864683808810
+    second: FuzzyAnimation_4
+  - first:
+      213: 1180810481168284873
+    second: FuzzyAnimation_5
+  - first:
+      213: 488307086675806161
+    second: FuzzyAnimation_6
+  - first:
+      213: -7685731511803803527
+    second: FuzzyAnimation_7
+  - first:
+      213: 6958393278440874726
+    second: FuzzyAnimation_8
+  - first:
+      213: -6090775759860019150
+    second: FuzzyAnimation_9
+  - first:
+      213: -426894438093265070
+    second: FuzzyAnimation_10
+  - first:
+      213: 1197634680464137626
+    second: FuzzyAnimation_11
+  - first:
+      213: -2416804141818172810
+    second: FuzzyAnimation_12
+  - first:
+      213: 553264393196235480
+    second: FuzzyAnimation_13
+  - first:
+      213: 6593589581546408182
+    second: FuzzyAnimation_14
+  - first:
+      213: -1192703028044361129
+    second: FuzzyAnimation_15
+  - first:
+      213: 6665591702170651059
+    second: FuzzyAnimation_16
+  - first:
+      213: -3294109761323509429
+    second: FuzzyAnimation_17
+  - first:
+      213: -8181303304583078866
+    second: FuzzyAnimation_18
+  - first:
+      213: -7729199433907552866
+    second: FuzzyAnimation_19
+  - first:
+      213: -6119590315060407615
+    second: FuzzyAnimation_20
+  - first:
+      213: -810298609521093192
+    second: FuzzyAnimation_21
+  - first:
+      213: -4428675240661144132
+    second: FuzzyAnimation_22
+  - first:
+      213: 1977921156644906565
+    second: FuzzyAnimation_23
+  - first:
+      213: -5340089295431743211
+    second: FuzzyAnimation_24
+  - first:
+      213: 7580123552260987121
+    second: FuzzyAnimation_25
+  - first:
+      213: 6909265251155266166
+    second: FuzzyAnimation_26
+  - first:
+      213: 1994093752571413447
+    second: FuzzyAnimation_27
+  - first:
+      213: 7163193890849466025
+    second: FuzzyAnimation_28
+  - first:
+      213: 7172991453824962256
+    second: FuzzyAnimation_29
+  - first:
+      213: 7154511511378195429
+    second: FuzzyAnimation_30
+  - first:
+      213: 1549366353693283965
+    second: FuzzyAnimation_31
+  - first:
+      213: -4711188974134874879
+    second: FuzzyAnimation_32
+  - first:
+      213: -2910944009568568448
+    second: FuzzyAnimation_33
+  - first:
+      213: -1410967324033448464
+    second: FuzzyAnimation_34
+  - first:
+      213: 1708708627862497064
+    second: FuzzyAnimation_35
+  - first:
+      213: -6829732592437636844
+    second: FuzzyAnimation_36
+  - first:
+      213: -6248495585575543231
+    second: FuzzyAnimation_37
+  - first:
+      213: 2798212069208556392
+    second: FuzzyAnimation_38
+  - first:
+      213: -2604270037148639275
+    second: FuzzyAnimation_39
+  - first:
+      213: 3305325040716547164
+    second: FuzzyAnimation_40
+  - first:
+      213: -8509444139439888544
+    second: FuzzyAnimation_41
+  - first:
+      213: -8405438263087612901
+    second: FuzzyAnimation_42
+  - first:
+      213: 5743886249536944431
+    second: FuzzyAnimation_43
+  - first:
+      213: 6929783481956894309
+    second: FuzzyAnimation_44
+  - first:
+      213: -5388973518064022159
+    second: FuzzyAnimation_45
+  - first:
+      213: -554871416661744898
+    second: FuzzyAnimation_46
+  - first:
+      213: -6994112120043756812
+    second: FuzzyAnimation_47
+  - first:
+      213: 8488259910902857360
+    second: FuzzyAnimation_48
+  - first:
+      213: -2450494084754214779
+    second: FuzzyAnimation_49
+  - first:
+      213: 8475205852960210855
+    second: FuzzyAnimation_50
+  - first:
+      213: -1979958781935891981
+    second: FuzzyAnimation_51
+  - first:
+      213: 6334808363762127038
+    second: FuzzyAnimation_52
+  - first:
+      213: -7874499965894100584
+    second: FuzzyAnimation_53
+  - first:
+      213: -362096819173308292
+    second: FuzzyAnimation_54
+  - first:
+      213: -8534126723105262704
+    second: FuzzyAnimation_55
+  - first:
+      213: 5713725343699536706
+    second: FuzzyAnimation_56
+  - first:
+      213: 6064497414806987498
+    second: FuzzyAnimation_57
+  - first:
+      213: 8110695419118682000
+    second: FuzzyAnimation_58
+  - first:
+      213: -903985605338602552
+    second: FuzzyAnimation_59
+  - first:
+      213: 5621473094945237015
+    second: FuzzyAnimation_60
+  - first:
+      213: -5808444168752746701
+    second: FuzzyAnimation_61
+  - first:
+      213: -7851100974089189466
+    second: FuzzyAnimation_62
+  - first:
+      213: 377103400592408911
+    second: FuzzyAnimation_63
+  - first:
+      213: -5916818405235470467
+    second: FuzzyAnimation_64
+  - first:
+      213: 599814658912358738
+    second: FuzzyAnimation_65
+  - first:
+      213: -2226237477646759265
+    second: FuzzyAnimation_66
+  - first:
+      213: 8707194831656823949
+    second: FuzzyAnimation_67
+  - first:
+      213: -127464091619959790
+    second: FuzzyAnimation_68
+  - first:
+      213: 2451635441070646280
+    second: FuzzyAnimation_69
+  - first:
+      213: -3543934194491355220
+    second: FuzzyAnimation_70
+  - first:
+      213: 793313478312928953
+    second: FuzzyAnimation_71
+  - first:
+      213: 8272810097152917924
+    second: FuzzyAnimation_72
+  - first:
+      213: 8186852534476904821
+    second: FuzzyAnimation_73
+  - first:
+      213: 2776883580083906217
+    second: FuzzyAnimation_74
+  - first:
+      213: 4323882878420100720
+    second: FuzzyAnimation_75
+  - first:
+      213: 1070169872369697711
+    second: FuzzyAnimation_76
+  - first:
+      213: 6872454012362826804
+    second: FuzzyAnimation_77
+  - first:
+      213: 1453273745110687025
+    second: FuzzyAnimation_78
+  - first:
+      213: 1163087463079638300
+    second: FuzzyAnimation_79
+  - first:
+      213: -6421181694292901308
+    second: FuzzyAnimation_80
+  - first:
+      213: -7772002484141716579
+    second: FuzzyAnimation_81
+  - first:
+      213: -7714735635376934411
+    second: FuzzyAnimation_82
+  - first:
+      213: -1162443124667366383
+    second: FuzzyAnimation_83
+  - first:
+      213: 1237163417215691668
+    second: FuzzyAnimation_84
+  - first:
+      213: 525863292214176233
+    second: FuzzyAnimation_85
+  - first:
+      213: -6592134217089848984
+    second: FuzzyAnimation_86
+  - first:
+      213: -770374613949285129
+    second: FuzzyAnimation_87
+  - first:
+      213: 5488410975310790538
+    second: FuzzyAnimation_88
+  - first:
+      213: 3760721408780560438
+    second: FuzzyAnimation_89
+  - first:
+      213: -8773196677796880094
+    second: FuzzyAnimation_90
+  - first:
+      213: -5290738222925594316
+    second: FuzzyAnimation_91
+  - first:
+      213: 4666874041420037788
+    second: FuzzyAnimation_92
+  - first:
+      213: -7895613969335557869
+    second: FuzzyAnimation_93
+  - first:
+      213: -7656546406454744913
+    second: FuzzyAnimation_94
+  - first:
+      213: 4183121527361133917
+    second: FuzzyAnimation_95
+  - first:
+      213: 4535703900573442719
+    second: FuzzyAnimation_96
+  - first:
+      213: -3586035716887641505
+    second: FuzzyAnimation_97
+  - first:
+      213: -3391883223774795762
+    second: FuzzyAnimation_98
+  - first:
+      213: 8126263038594254305
+    second: FuzzyAnimation_99
+  - first:
+      213: 1729462787552028944
+    second: FuzzyAnimation_25
+  - first:
+      213: -1401771450752120000
+    second: FuzzyAnimation_26
+  - first:
+      213: -3081640407326538437
+    second: FuzzyAnimation_27
+  - first:
+      213: 4766880391006154627
+    second: FuzzyAnimation_28
+  - first:
+      213: -4299821119336304895
+    second: FuzzyAnimation_29
+  - first:
+      213: -5741341189092789259
+    second: FuzzyAnimation_30
+  - first:
+      213: 4626146524263249440
+    second: FuzzyAnimation_31
+  - first:
+      213: 7488943423339284824
+    second: FuzzyAnimation_32
+  - first:
+      213: 8375390863421630292
+    second: FuzzyAnimation_33
+  - first:
+      213: 3683769056203281485
+    second: FuzzyAnimation_34
+  - first:
+      213: 6660503011348378171
+    second: FuzzyAnimation_35
+  - first:
+      213: 2585908358975067376
+    second: FuzzyAnimation_36
+  - first:
+      213: 2264249270158503630
+    second: FuzzyAnimation_37
+  - first:
+      213: 8298211978610220903
+    second: FuzzyAnimation_38
+  - first:
+      213: 1529448820198571357
+    second: FuzzyAnimation_39
+  - first:
+      213: 2898344862401877362
+    second: FuzzyAnimation_40
+  - first:
+      213: -4609166492549745184
+    second: FuzzyAnimation_41
+  - first:
+      213: -7987756696914412190
+    second: FuzzyAnimation_42
+  - first:
+      213: -1613245119127699071
+    second: FuzzyAnimation_50
+  - first:
+      213: 2690857831615349537
+    second: FuzzyAnimation_51
+  - first:
+      213: 3582131423494533208
+    second: FuzzyAnimation_52
+  - first:
+      213: 7623905922943112349
+    second: FuzzyAnimation_53
+  - first:
+      213: -766328225832790883
+    second: FuzzyAnimation_54
+  - first:
+      213: 5231494190536441743
+    second: FuzzyAnimation_55
+  - first:
+      213: 8693985969400100308
+    second: FuzzyAnimation_56
+  - first:
+      213: 3328531722627825090
+    second: FuzzyAnimation_57
+  - first:
+      213: 5106753315067549852
+    second: FuzzyAnimation_58
+  - first:
+      213: -8306666516007125979
+    second: FuzzyAnimation_59
+  - first:
+      213: -5148691697242679004
+    second: FuzzyAnimation_60
+  - first:
+      213: -6915301846866795371
+    second: FuzzyAnimation_61
+  - first:
+      213: -4871299397697381554
+    second: FuzzyAnimation_62
+  - first:
+      213: 7122087191196322707
+    second: FuzzyAnimation_63
+  - first:
+      213: 8030508274893424105
+    second: FuzzyAnimation_64
+  - first:
+      213: 3607417432171871095
+    second: FuzzyAnimation_65
+  - first:
+      213: -2338583535479609594
+    second: FuzzyAnimation_66
+  - first:
+      213: -1622766107304067992
+    second: FuzzyAnimation_67
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FuzzyAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b696aaf09cc1050800000000000000
+      internalID: 5772709891502861102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1773c7e4868c5ce10800000000000000
+      internalID: 2217398741868754801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732ce6d087ac5e700800000000000000
+      internalID: 569083544902484535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ffb090f52147690800000000000000
+      internalID: -7605433671338950832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d723d7ac95412ac0800000000000000
+      internalID: -3881744864683808810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccf71d50e4136010800000000000000
+      internalID: 1180810481168284873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d70e9a45b0d6c600800000000000000
+      internalID: 488307086675806161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97888e729ebc65590800000000000000
+      internalID: -7685731511803803527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e22fe0d1dd219060800000000000000
+      internalID: 6958393278440874726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230dbfa77b7397ba0800000000000000
+      internalID: -6090775759860019150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2576cd435cd531af0800000000000000
+      internalID: -426894438093265070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9dd0c3856ade9010800000000000000
+      internalID: 1197634680464137626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_12
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a2c331079c57ed0800000000000000
+      internalID: -2416804141818172810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_13
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da6557c8079da700800000000000000
+      internalID: 553264393196235480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_14
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f84ac24ac2218b50800000000000000
+      internalID: 6593589581546408182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_15
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75212ea4aeaa27fe0800000000000000
+      internalID: -1192703028044361129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_16
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b94ca95650f08c50800000000000000
+      internalID: 6665591702170651059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_17
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 2200
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b495a2100a8f842d0800000000000000
+      internalID: -3294109761323509429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c989aadfb267e80800000000000000
+      internalID: -8181303304583078866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d3acfd01e5cb490800000000000000
+      internalID: -7729199433907552866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_20
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c257eb0809d21ba0800000000000000
+      internalID: -6119590315060407615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_21
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5908135bd31c4f0800000000000000
+      internalID: -810298609521093192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_22
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd23de255f2a82c0800000000000000
+      internalID: -4428675240661144132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546ac8fffccf27b10800000000000000
+      internalID: 1977921156644906565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_24
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519ccec241134e5b0800000000000000
+      internalID: -5340089295431743211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_43
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2976ed8c1266bf40800000000000000
+      internalID: 5743886249536944431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_44
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566096c7c598b2060800000000000000
+      internalID: 6929783481956894309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_45
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d8ec723258635b0800000000000000
+      internalID: -5388973518064022159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_46
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2ebd9e263bc48f0800000000000000
+      internalID: -554871416661744898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_47
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2a98d451cefee90800000000000000
+      internalID: -6994112120043756812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_48
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ebd8e8a6b5cc570800000000000000
+      internalID: 8488259910902857360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_49
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580770afc981efdd0800000000000000
+      internalID: -2450494084754214779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_68
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21cdf5185182b3ef0800000000000000
+      internalID: -127464091619959790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_69
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80426cfb175f50220800000000000000
+      internalID: 2451635441070646280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_70
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf8bfd60aa61dec0800000000000000
+      internalID: -3543934194491355220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_71
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b62f56c76a620b00800000000000000
+      internalID: 793313478312928953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1801fb3fceec270800000000000000
+      internalID: 8272810097152917924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_25
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019ab400e39400810800000000000000
+      internalID: 1729462787552028944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_26
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bc2adda48eb8ce0800000000000000
+      internalID: -1401771450752120000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_27
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35cfc37060db35d0800000000000000
+      internalID: -3081640407326538437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_28
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f62b8a57c572240800000000000000
+      internalID: 4766880391006154627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_29
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fac303977f354c0800000000000000
+      internalID: -4299821119336304895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_30
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f33ec18b98a250b0800000000000000
+      internalID: -5741341189092789259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_31
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0267e91e0cf533040800000000000000
+      internalID: 4626146524263249440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_32
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859c22b8d521ee760800000000000000
+      internalID: 7488943423339284824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_33
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4576c459d9d5b3470800000000000000
+      internalID: 8375390863421630292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_34
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44929d60706f1330800000000000000
+      internalID: 3683769056203281485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_35
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 1650
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32f6d0333cde6c50800000000000000
+      internalID: 6660503011348378171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f41c66a3fdf2e320800000000000000
+      internalID: 2585908358975067376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_37
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece2cb6f6ba3c6f10800000000000000
+      internalID: 2264249270158503630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f14f724db292370800000000000000
+      internalID: 8298211978610220903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_39
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d731e3991b93510800000000000000
+      internalID: 1529448820198571357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_40
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275da08db4df83820800000000000000
+      internalID: 2898344862401877362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_41
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e570f4de73f800c0800000000000000
+      internalID: -4609166492549745184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_42
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d3b28ea99c52190800000000000000
+      internalID: -7987756696914412190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_50
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181c2ca8c1a9c99e0800000000000000
+      internalID: -1613245119127699071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_51
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123c28ae0f8d75520800000000000000
+      internalID: 2690857831615349537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_52
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850f72cfc8946b130800000000000000
+      internalID: 3582131423494533208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_53
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 1100
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9455023b0e8dc960800000000000000
+      internalID: 7623905922943112349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9491ede9847d55f0800000000000000
+      internalID: -766328225832790883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_55
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fb177af300a9840800000000000000
+      internalID: 5231494190536441743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5b25c2d2e37a870800000000000000
+      internalID: 8693985969400100308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_57
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdb9d667f1513e20800000000000000
+      internalID: 3328531722627825090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_58
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9856245515ded640800000000000000
+      internalID: 5106753315067549852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_59
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c73c570dac8bc80800000000000000
+      internalID: -8306666516007125979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_60
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429d8d72e2c2c88b0800000000000000
+      internalID: -5148691697242679004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_61
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594e6eeeb99e700a0800000000000000
+      internalID: -6915301846866795371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_62
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b5cadc10ba56cb0800000000000000
+      internalID: -4871299397697381554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_63
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bcd92e09cb6d260800000000000000
+      internalID: 7122087191196322707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_64
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e58bd28ab8127f60800000000000000
+      internalID: 8030508274893424105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_65
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bf729aa0f101230800000000000000
+      internalID: 3607417432171871095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_66
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60729223aaeab8fd0800000000000000
+      internalID: -2338583535479609594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FuzzyAnimation_67
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 550
+        width: 300
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cf89cb2d6ca79e0800000000000000
+      internalID: -1622766107304067992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 89067624d64c09648b8b203c52f79161
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
