@@ -6,8 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance = null;
 
-    
-    public bool ___constants___;
+    [Tooltip("For safe Distribution to other Scripts through this accessible Static NOT WORK ON RELOAD")]
+    public GameObject PlumberLink;
+
+    [Header("Internals, public for ease of access from other scrips or debugging")]
     public bool IsGameplayActive = true;
     public bool IsGameOver = false;
     public int ScoreMultiplyer = 100;

@@ -198,6 +198,7 @@ public class Plumber : MonoBehaviour
             orientArmsTowards(collision.contacts[0].point);
             audioHandler.SetAndPlay("Land");
         }
+        
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -240,12 +241,12 @@ public class Plumber : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.transform.name == "SlimeCollider")
+        if (collision.collider.name == "SlimeCollider")
         {
             attached = false;
             plumberInput.LockLaunch();
         }
-        else if (collision.transform.name == "WallLevel")
+        else if (collision.collider.name == "WallLevel")
         {
             //attached = false;
         }
@@ -278,12 +279,9 @@ public class Plumber : MonoBehaviour
 
             float bounceAngle = 0f;
             if(this.transform.position.x <= posFuzzy.x)
-            {
                 bounceAngle = 150f;
-            } else
-            {
+            else
                 bounceAngle = -150f;
-            }
             LaunchCharacter(180f - bounceAngle, MaxPower);
             DamagePlumber(1);
         }
@@ -305,6 +303,18 @@ public class Plumber : MonoBehaviour
             timerPowerUp = 10f;
             collision.transform.parent.gameObject.SetActive(false);
             audioHandler.SetAndPlay("PowerUp");
+        }
+        else if (collision.transform.name == "MaskCollider")
+        {
+            rBody.velocity = Vector2.zero;
+            Vector2 posFuzzy = collision.transform.position;
+            float bounceAngle = 0f;
+            if (this.transform.position.x <= posFuzzy.x)
+                bounceAngle = +150f;
+            else
+                bounceAngle = -150f;
+            LaunchCharacter(180f - bounceAngle, MaxPower);
+            DamagePlumber(1);
         }
     }
 

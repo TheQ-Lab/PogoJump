@@ -6,7 +6,6 @@ public class CameraControl : MonoBehaviour
 {
     public GameObject follows;
 
-    public bool ___CONSTANTS___ = false;
 
     
 
