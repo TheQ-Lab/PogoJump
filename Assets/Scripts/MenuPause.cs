@@ -10,6 +10,12 @@ public class MenuPause : MonoBehaviour
         GameManager.Instance.SetGameplayPause(false);
     }
 
+    public void OnClickRestart()
+    {
+        Debug.Log("RESTART GAME");
+        GameManager.Instance.ResetGame();
+    }
+
     public void OnClickQuit()
     {
         Debug.Log("QUIT GAME");

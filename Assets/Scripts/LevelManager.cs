@@ -116,7 +116,7 @@ public class LevelManager : MonoBehaviour
             {
                 //Debug.LogError("Reset " + t.name + " in Module " + m.transform.name + " , Index: " + moduleIndex);
                 int rand = Random.Range(0, 100);
-                if (rand < 35) // "< 35" exakt 35%, da min inklusiv, max exklusiv
+                if (rand < 25) // "< 35" exakt 35%, da min inklusiv, max exklusiv
                     t.gameObject.SetActive(true);
                 else
                     t.gameObject.SetActive(false);
@@ -125,7 +125,7 @@ public class LevelManager : MonoBehaviour
             else if (t.name.Contains("PowerUp"))
             {
                 int rand = Random.Range(0, 100);
-                if (rand < 35)
+                if (rand < 25)
                     t.gameObject.SetActive(true);
                 else
                     t.gameObject.SetActive(false);
