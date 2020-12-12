@@ -13,9 +13,6 @@ public class LevelManager : MonoBehaviour
     private List<GameObject> modulePool = new List<GameObject>();
     private int indexCurrentModule = -1;
     
-
-    private int temp = 0;
-    // Start is called before the first frame update
     void Start()
     {
         if (TestHighestLowest != null) GetHighestY(TestHighestLowest);
@@ -23,17 +20,9 @@ public class LevelManager : MonoBehaviour
         //SpawnNewModule();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-
-    }
 
     void FixedUpdate()
     {
-        temp++;
-        //if (temp == 50) {  }
         if (indexCurrentModule == -1)
         {
             if (SpawnTrigger.transform.position.y >= StartModule.transform.position.y)
@@ -116,11 +105,11 @@ public class LevelManager : MonoBehaviour
             {
                 //Debug.LogError("Reset " + t.name + " in Module " + m.transform.name + " , Index: " + moduleIndex);
                 int rand = Random.Range(0, 100);
-                if (rand < 25) // "< 35" exakt 35%, da min inklusiv, max exklusiv
+                if (rand < 15) // "< 35" exakt 35%, da min inklusiv, max exklusiv
                     t.gameObject.SetActive(true);
                 else
                     t.gameObject.SetActive(false);
-                Debug.LogWarning(rand + " 1Up");
+                //Debug.LogWarning(rand + " 1Up");
             }
             else if (t.name.Contains("PowerUp"))
             {
@@ -129,7 +118,12 @@ public class LevelManager : MonoBehaviour
                     t.gameObject.SetActive(true);
                 else
                     t.gameObject.SetActive(false);
-                Debug.LogWarning(rand + " PUp");
+                //Debug.LogWarning(rand + " PUp");
+            }
+            else if (t.name.StartsWith("Mask"))
+            {
+                t.GetComponent<Mask>().enabled = true;
+                t.GetComponent<Mask>().Reset();
             }
         }
     }

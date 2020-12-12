@@ -138,8 +138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c850b521b16d1419f82da5ae8928ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AwakeningProximity: 8
-  MoveSpeed: 1
+  AwakeningProximity: 10
+  MoveSpeed: 1.3
 --- !u!1 &1745563192356914193
 GameObject:
   m_ObjectHideFlags: 0

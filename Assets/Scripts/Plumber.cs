@@ -71,7 +71,7 @@ public class Plumber : MonoBehaviour
         if(timerPowerUp < 0)
         {
             plumberInput.LockLaunch();
-            MaxPower -= 250;
+            MaxPower = MaxPowerStandard;
             plumberInput.SetMaxLaunchArrow(MaxPower, UiArrow.ArrowColors.standard);
             timerPowerUp = 0f;
             audioHandler.SetAndPlay("PowerDown");
@@ -167,7 +167,7 @@ public class Plumber : MonoBehaviour
         livesIcons.SetLives(Lives);
         if (damage > 0)
         {
-            timerLastHit = 3f;
+            timerLastHit = 2.5f;
             audioHandler.SetAndPlay("Damage");
         } 
         else if(damage < 0)
@@ -252,11 +252,11 @@ public class Plumber : MonoBehaviour
         {
             attached = false;
             plumberInput.LockLaunch();
-        }
+        }/*
         else if (collision.collider.name == "WallLevel")
         {
             //attached = false;
-        }
+        }*/
     }
 
 
@@ -265,13 +265,44 @@ public class Plumber : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!GameManager.Instance.IsGameplayActive) return;
-        if (timerLastHit>0)
+
+        if (collision.transform.name == "ExtraLifeCollider")
         {
-            Debug.Log("Blink halt");
-            return;
+            DamagePlumber(-1);
+            collision.transform.parent.gameObject.SetActive(false);
+        }
+        else if (collision.transform.name == "PowerUpCollider")
+        {
+            plumberInput.LockLaunch();
+            MaxPower = PoweredUpPower;
+            plumberInput.SetMaxLaunchArrow(MaxPower, UiArrow.ArrowColors.poweredUp);
+            timerPowerUp = 10f;
+            collision.transform.parent.gameObject.SetActive(false);
+            audioHandler.SetAndPlay("PowerUp");
         }
 
-        if (collision.transform.name == "Acid"|| collision.transform.name == "DeathPlain")
+        if (timerLastHit>0)
+            return;
+
+        
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (!GameManager.Instance.IsGameplayActive) return;
+
+        if (timerLastHit > 0)
+            return;
+        /*
+        if (collision.transform.name == "Acid")
+        {
+            rBody.velocity = Vector2.zero;
+            float bounceAngle = Random.Range(-30f, 30f);
+            LaunchCharacter(bounceAngle, MaxPower);
+            DamagePlumber(1);
+        }*/
+
+        if (collision.transform.name == "Acid" || collision.transform.name == "DeathPlain")
         {
             rBody.velocity = Vector2.zero;
             float bounceAngle = Random.Range(-30f, 30f);
@@ -285,7 +316,7 @@ public class Plumber : MonoBehaviour
             Vector2 posFuzzy = collision.transform.position;
 
             float bounceAngle = 0f;
-            if(this.transform.position.x <= posFuzzy.x)
+            if (this.transform.position.x <= posFuzzy.x)
                 bounceAngle = 150f;
             else
                 bounceAngle = -150f;
@@ -297,20 +328,6 @@ public class Plumber : MonoBehaviour
             //replaced up there with 1-Damage Acid-Logic
             DamagePlumber(3);
         }*/
-        else if (collision.transform.name == "ExtraLifeCollider")
-        {
-            DamagePlumber(-1);
-            collision.transform.parent.gameObject.SetActive(false);
-        }
-        else if (collision.transform.name == "PowerUpCollider")
-        {
-            plumberInput.LockLaunch();
-            MaxPower += 250;
-            plumberInput.SetMaxLaunchArrow(MaxPower, UiArrow.ArrowColors.poweredUp);
-            timerPowerUp = 10f;
-            collision.transform.parent.gameObject.SetActive(false);
-            audioHandler.SetAndPlay("PowerUp");
-        }
         else if (collision.transform.name == "MaskCollider")
         {
             rBody.velocity = Vector2.zero;
@@ -321,25 +338,6 @@ public class Plumber : MonoBehaviour
             else
                 bounceAngle = -150f;
             LaunchCharacter(180f - bounceAngle, MaxPower);
-            DamagePlumber(1);
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (!GameManager.Instance.IsGameplayActive) return;
-
-        if (timerLastHit > 0)
-        {
-            Debug.Log("Blink halt");
-            return;
-        }
-
-        if (collision.transform.name == "Acid")
-        {
-            rBody.velocity = Vector2.zero;
-            float bounceAngle = Random.Range(-30f, 30f);
-            LaunchCharacter(bounceAngle, MaxPower);
             DamagePlumber(1);
         }
     }

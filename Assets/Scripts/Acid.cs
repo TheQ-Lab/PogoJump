@@ -40,20 +40,20 @@ public class Acid : MonoBehaviour
         float yThis = highestPoint.position.y;
         float yPlumber = plumber.position.y;
         if (yPlumber - yThis > maxDistanceToPlumber)
-        {
             rBody.position = new Vector2(rBody.position.x, yPlumber - maxDistanceToPlumber);
-        }
     }
 
     public void RaiseVelocityByIncrement(int Increments)
     {
-        velocity += Increments * incrementVelocity;
-        velocity = Mathf.Min(velocity, velocityFinal);
+        float newVelocity = velocity + Increments * incrementVelocity;
+        newVelocity = Mathf.Clamp(newVelocity, 0f, velocityFinal);
+        SetVelocity(newVelocity);
     }
 
     public void SetVelocity(float newVelocity)
     {
         velocity = newVelocity;
+        rBody.velocity = new Vector2(0f, velocity); ;
     }
 
     public void StartRising()

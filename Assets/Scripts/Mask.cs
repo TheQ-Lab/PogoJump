@@ -9,10 +9,12 @@ public class Mask : MonoBehaviour
     [Tooltip("MovementSpeed of {Mask} towards [Plumber]")]
     public float MoveSpeed = 1f;
 
+    //private bool IsDisabled = false; replaced by enable Script
     private bool IsAwake = false;
 
     private Rigidbody2D rBody;
-    private Transform plumberTransform;
+    private Vector3 originalLocalPosition;
+    private Transform plumberTransform, moduleHighestPos, thisPos;
     private Animator animator;
 
     // Start is called before the first frame update
@@ -21,6 +23,11 @@ public class Mask : MonoBehaviour
         rBody = GetComponent<Rigidbody2D>();
         plumberTransform = GameObject.Find("Plumber").GetComponent<Transform>();
         animator = GetComponent<Animator>();
+
+        moduleHighestPos = transform.parent.Find("HighestPoint").transform;
+        thisPos = gameObject.transform;
+
+        originalLocalPosition = transform.localPosition;
     }
 
     // Update is called once per frame
@@ -28,11 +35,12 @@ public class Mask : MonoBehaviour
     {
         CheckDistancePlumber();
 
-
         if (IsAwake)
         {
             FollowPlumber();
         }
+
+        CheckDisable();
     }
 
     private void CheckDistancePlumber()
@@ -64,6 +72,25 @@ public class Mask : MonoBehaviour
             if (IsAwake == false)
                 rBody.velocity = Vector2.zero;
         }
+    }
+
+
+    private void CheckDisable()
+    {
+        //LEFT: mask stepping over level boundries  RIGHT: plumber too high above (happens when asleep before hitting boundries) - to save on resources
+        if(thisPos.position.y >= moduleHighestPos.position.y || plumberTransform.position.y > thisPos.position.y+20f)
+        {
+            this.SetAwake(false);
+            animator.SetTrigger("Disable");
+            this.enabled = false;
+        }
+    }
+
+    public void Reset()
+    {
+        transform.localPosition = originalLocalPosition;
+        SetAwake(false);
+        Debug.LogWarning("Mask reset");
     }
 
 }
