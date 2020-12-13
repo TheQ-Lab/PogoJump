@@ -2226,7 +2226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityStart: 1.2
   velocityFinal: 2.5
-  incrementVelocity: 0.3
+  incrementVelocity: 0.2
   maxDistanceToPlumber: 22
   velocity: 0
   isRising: 0
