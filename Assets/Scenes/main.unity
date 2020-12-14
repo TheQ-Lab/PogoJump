@@ -3295,6 +3295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f7d1f2a6817ad4594a863f83470cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartModule: {fileID: 89997885}
   ModulePrefabs:
   - {fileID: 3830832157381974011, guid: 95014cb3f5a4f3141b2a39998b6e35ab, type: 3}
   - {fileID: 3830832157381974011, guid: 72e9c0b5fddfeb14aaae35eabb06f6f9, type: 3}
@@ -3310,9 +3311,8 @@ MonoBehaviour:
   - {fileID: 3830832157381974011, guid: 50956788306af0a4fb8246b7a56b1655, type: 3}
   - {fileID: 3830832157381974011, guid: 9aa962eb48dfbfa4d97a7b56278a92f0, type: 3}
   - {fileID: 3830832157381974011, guid: 7c8a7de0ef7ea5d4fb00fd1a5ea93eff, type: 3}
-  StartModule: {fileID: 89997885}
   TestHighestLowest: {fileID: 0}
-  EnableTestModuleList: 1
+  EnableTestModuleList: 0
   TestModules:
   - {fileID: 3830832157381974011, guid: 568a84f3b6ce1d24d97c21a039af212a, type: 3}
   - {fileID: 3830832157381974011, guid: 50956788306af0a4fb8246b7a56b1655, type: 3}
@@ -3672,6 +3672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f7d1f2a6817ad4594a863f83470cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartModule: {fileID: 89997885}
   ModulePrefabs:
   - {fileID: 3830832157381974011, guid: 95014cb3f5a4f3141b2a39998b6e35ab, type: 3}
   - {fileID: 3830832157381974011, guid: 72e9c0b5fddfeb14aaae35eabb06f6f9, type: 3}
@@ -3681,7 +3682,6 @@ MonoBehaviour:
   - {fileID: 3830832157381974011, guid: 86836fdb9c88eb64aabe52533e580ffe, type: 3}
   - {fileID: 3830832157381974011, guid: 7a163ba90a5d48b44a1b9db37b139dcd, type: 3}
   - {fileID: 3830832157381974011, guid: 22aaa811dc079834ba48561f77a1af41, type: 3}
-  StartModule: {fileID: 89997885}
   TestHighestLowest: {fileID: 0}
   EnableTestModuleList: 0
   TestModules: []

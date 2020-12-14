@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public List<GameObject> ModulePrefabs;
+    [Header("Modules")]
+    [Tooltip("The Instance of the already present at Startup StartModule must be here")]
     public GameObject StartModule;
+    [Tooltip("All Levels that are instantiated and spawned")]
+    public List<GameObject> ModulePrefabs;
+    
     [Header("Testing/Debugging")]
-    [Tooltip("For one time use of in Editor instantiated and at (0,0,0) positioned Module, or its WalllLevel Object")]
+    [Tooltip("For one time use of in Editor instantiated and at (0,0,0) positioned Module, or its WalllLevel Object - [CAN BE LEFT EMPTY during normal Runtime]")]
     public GameObject TestHighestLowest;
+    [Tooltip("Should [TestModules] be spawned instead of regular [ModulePrefabs]?")]
     public bool EnableTestModuleList;
+    [Tooltip("Modules to spawn instead of [ModulePrefabs]")]
     public List<GameObject> TestModules;
 
     [Header("Referenzen")]
@@ -81,7 +87,7 @@ public class LevelManager : MonoBehaviour
             currentModule = modulePool[indexCurrentModule];
         }
         Vector2 highestPointPrev = (Vector2)currentModule.transform.Find("HighestPoint").position; //absolute/worldPos
-        //calculate new module-no
+        //calculate Index of new module
         int indexNewModule = indexCurrentModule;
         while (indexNewModule == indexCurrentModule)
         {
