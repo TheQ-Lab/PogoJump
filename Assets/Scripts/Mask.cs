@@ -13,9 +13,14 @@ public class Mask : MonoBehaviour
     private bool IsAwake = false;
 
     private Rigidbody2D rBody;
-    private Vector3 originalLocalPosition;
+    public Vector3 originalLocalPosition;
     private Transform plumberTransform, moduleHighestPos, thisPos;
     private Animator animator;
+
+    private void Awake()
+    {
+        originalLocalPosition = transform.localPosition;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +32,7 @@ public class Mask : MonoBehaviour
         moduleHighestPos = transform.parent.Find("HighestPoint").transform;
         thisPos = gameObject.transform;
 
-        originalLocalPosition = transform.localPosition;
+        
     }
 
     // Update is called once per frame
@@ -90,7 +95,7 @@ public class Mask : MonoBehaviour
     {
         transform.localPosition = originalLocalPosition;
         SetAwake(false);
-        Debug.LogWarning("Mask reset");
+        Debug.Log("Mask reset");
     }
 
 }

@@ -6,7 +6,14 @@ public class LevelManager : MonoBehaviour
 {
     public List<GameObject> ModulePrefabs;
     public GameObject StartModule;
+    [Header("Testing/Debugging")]
+    [Tooltip("For one time use of in Editor instantiated and at (0,0,0) positioned Module, or its WalllLevel Object")]
     public GameObject TestHighestLowest;
+    public bool EnableTestModuleList;
+    public List<GameObject> TestModules;
+
+    [Header("Referenzen")]
+    [Tooltip("The [GameObject] which triggers the spawn of new levels")]
     public GameObject SpawnTrigger;
     public Acid acid;
 
@@ -16,6 +23,18 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         if (TestHighestLowest != null) GetHighestY(TestHighestLowest);
+        if (EnableTestModuleList)
+        {
+            if (TestModules.Count == 0)
+                Debug.LogWarning("No Module in TestModules, please fill TestModules with prefab(s) or set EnableTestModuleList false!");
+            else
+            {
+                ModulePrefabs.Clear();
+                foreach(GameObject m in TestModules)
+                    ModulePrefabs.Add(m);
+            }
+        }
+
         FillPool();
         //SpawnNewModule();
     }
@@ -25,17 +44,17 @@ public class LevelManager : MonoBehaviour
     {
         if (indexCurrentModule == -1)
         {
-            if (SpawnTrigger.transform.position.y >= StartModule.transform.position.y)
-            {
+            if (SpawnTrigger.transform.position.y >= StartModule.transform.Find("LowestPoint").position.y)
                 SpawnNewModule();
-                acid.StartRising();//ONLY NEED TO ACTIVATE ONCE
-            }
             return;
         }
-        if (SpawnTrigger.transform.position.y >= modulePool[indexCurrentModule].transform.position.y)
+        else if (SpawnTrigger.transform.position.y >= modulePool[indexCurrentModule].transform.Find("LowestPoint").position.y)
         {
             SpawnNewModule();
-            acid.RaiseVelocityByIncrement(1);
+            if (acid.GetRising() == false)
+                acid.StartRising();
+            else 
+                acid.RaiseVelocityByIncrement(1);
         }
     }
 

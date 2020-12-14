@@ -32,7 +32,8 @@ public class Acid : MonoBehaviour
 
     private void Update()
     {
-        CloseUpToPlayer();
+        if (isRising)
+            CloseUpToPlayer();
     }
 
     private void CloseUpToPlayer()

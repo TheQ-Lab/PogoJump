@@ -1957,11 +1957,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073610376}
   m_CullTransparentMesh: 0
---- !u!1 &1078706531 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3830832155737730834, guid: 1912d79e325aad74a9728acbacdf7286, type: 3}
-  m_PrefabInstance: {fileID: 585964875}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1126387808
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,7 +2222,7 @@ MonoBehaviour:
   velocityStart: 1.2
   velocityFinal: 2.5
   incrementVelocity: 0.15
-  maxDistanceToPlumber: 16
+  maxDistanceToPlumber: 15
   velocity: 0
   isRising: 0
 --- !u!61 &1196876470
@@ -3316,7 +3311,12 @@ MonoBehaviour:
   - {fileID: 3830832157381974011, guid: 9aa962eb48dfbfa4d97a7b56278a92f0, type: 3}
   - {fileID: 3830832157381974011, guid: 7c8a7de0ef7ea5d4fb00fd1a5ea93eff, type: 3}
   StartModule: {fileID: 89997885}
-  TestHighestLowest: {fileID: 1078706531}
+  TestHighestLowest: {fileID: 0}
+  EnableTestModuleList: 1
+  TestModules:
+  - {fileID: 3830832157381974011, guid: 568a84f3b6ce1d24d97c21a039af212a, type: 3}
+  - {fileID: 3830832157381974011, guid: 50956788306af0a4fb8246b7a56b1655, type: 3}
+  - {fileID: 3830832157381974011, guid: 9aa962eb48dfbfa4d97a7b56278a92f0, type: 3}
   SpawnTrigger: {fileID: 1299645942}
   acid: {fileID: 1196876469}
 --- !u!4 &1715386781
@@ -3683,6 +3683,8 @@ MonoBehaviour:
   - {fileID: 3830832157381974011, guid: 22aaa811dc079834ba48561f77a1af41, type: 3}
   StartModule: {fileID: 89997885}
   TestHighestLowest: {fileID: 0}
+  EnableTestModuleList: 0
+  TestModules: []
   SpawnTrigger: {fileID: 1299645942}
   acid: {fileID: 1196876469}
 --- !u!1 &2035998382
