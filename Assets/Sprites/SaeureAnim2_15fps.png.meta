@@ -1,0 +1,826 @@
+fileFormatVersion: 2
+guid: b4d24e8616b49744cae199b2ab18fac5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 465595371442845838
+    second: SaeureAnim2_15fps_0
+  - first:
+      213: -8978200845349421726
+    second: SaeureAnim2_15fps_1
+  - first:
+      213: 5119735056649338806
+    second: SaeureAnim2_15fps_2
+  - first:
+      213: -5256845168650994895
+    second: SaeureAnim2_15fps_3
+  - first:
+      213: -5917052627776810368
+    second: SaeureAnim2_15fps_4
+  - first:
+      213: 5100609204130924437
+    second: SaeureAnim2_15fps_5
+  - first:
+      213: 4425251308861486918
+    second: SaeureAnim2_15fps_6
+  - first:
+      213: 2226666813288019983
+    second: SaeureAnim2_15fps_7
+  - first:
+      213: 319382927428174860
+    second: SaeureAnim2_15fps_8
+  - first:
+      213: 3781376007166039444
+    second: SaeureAnim2_15fps_9
+  - first:
+      213: 3440200437029433269
+    second: SaeureAnim2_15fps_10
+  - first:
+      213: -6059294800185533729
+    second: SaeureAnim2_15fps_11
+  - first:
+      213: 2522318745097046517
+    second: SaeureAnim2_15fps_12
+  - first:
+      213: -3562721882324023222
+    second: SaeureAnim2_15fps_13
+  - first:
+      213: -2396078938487564602
+    second: SaeureAnim2_15fps_14
+  - first:
+      213: -9113779890564640066
+    second: SaeureAnim2_15fps_15
+  - first:
+      213: -7636096236115289988
+    second: SaeureAnim2_15fps_16
+  - first:
+      213: 2708727037488392783
+    second: SaeureAnim2_15fps_17
+  - first:
+      213: -8271940484582034566
+    second: SaeureAnim2_15fps_18
+  - first:
+      213: -2527453675304880561
+    second: SaeureAnim2_15fps_19
+  - first:
+      213: 1386859189968199396
+    second: SaeureAnim2_15fps_20
+  - first:
+      213: 3026686173148234184
+    second: SaeureAnim2_15fps_21
+  - first:
+      213: 3005161541449384600
+    second: SaeureAnim2_15fps_22
+  - first:
+      213: -5625602846223121287
+    second: SaeureAnim2_15fps_23
+  - first:
+      213: 2365782980026608054
+    second: SaeureAnim2_15fps_24
+  - first:
+      213: -3974499752616639869
+    second: SaeureAnim2_15fps_25
+  - first:
+      213: -1165895221258659046
+    second: SaeureAnim2_15fps_26
+  - first:
+      213: -5607355237244257340
+    second: SaeureAnim2_15fps_27
+  - first:
+      213: 654151512714680028
+    second: SaeureAnim2_15fps_28
+  - first:
+      213: -2071899517816939857
+    second: SaeureAnim2_15fps_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88bae30680267600800000000000000
+      internalID: 465595371442845838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_1
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 7000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26df5d256e5076380800000000000000
+      internalID: -8978200845349421726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_2
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 7000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfb2b398e3fc0740800000000000000
+      internalID: 5119735056649338806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_3
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 7000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b345bcb2feb07b0800000000000000
+      internalID: -5256845168650994895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08252142cf762eda0800000000000000
+      internalID: -5917052627776810368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_5
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 6000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597cf460c0109c640800000000000000
+      internalID: 5100609204130924437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_6
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 6000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64775829e96a96d30800000000000000
+      internalID: 4425251308861486918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_7
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 6000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08fe275ba5b6ee10800000000000000
+      internalID: 2226666813288019983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c044ea0941dae6400800000000000000
+      internalID: 319382927428174860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_9
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4951155a1752a7430800000000000000
+      internalID: 3781376007166039444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_10
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 5000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf684d021c0ebf20800000000000000
+      internalID: 3440200437029433269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_11
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 5000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdad1959b7f09eba0800000000000000
+      internalID: -6059294800185533729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f981dbe883110320800000000000000
+      internalID: 2522318745097046517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_13
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 4000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48c09af25bae8ec0800000000000000
+      internalID: -3562721882324023222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_14
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 4000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c657a186ea6fbed0800000000000000
+      internalID: -2396078938487564602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_15
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 4000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2dbc5f979558180800000000000000
+      internalID: -9113779890564640066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7896a75ee2270690800000000000000
+      internalID: -7636096236115289988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_17
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4aedfe93e4579520800000000000000
+      internalID: 2708727037488392783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_18
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 3000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73b055b4f9243d80800000000000000
+      internalID: -8271940484582034566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_19
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 3000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f467239f54eacecd0800000000000000
+      internalID: -2527453675304880561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee5a8bd51d1f3310800000000000000
+      internalID: 1386859189968199396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_21
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c14615d903f00a20800000000000000
+      internalID: 3026686173148234184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_22
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 2000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89281caff7a74b920800000000000000
+      internalID: 3005161541449384600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_23
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 2000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974c17f5408dde1b0800000000000000
+      internalID: -5625602846223121287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9a62cf513f4d020800000000000000
+      internalID: 2365782980026608054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_25
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3824865688db7d8c0800000000000000
+      internalID: -3974499752616639869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_26
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 1000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b5d833978e1dfe0800000000000000
+      internalID: -1165895221258659046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_27
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 1000
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb31aaee1cae22b0800000000000000
+      internalID: -5607355237244257340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd694a0c553041900800000000000000
+      internalID: 654151512714680028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaeureAnim2_15fps_29
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 3840
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faad73ead522f33e0800000000000000
+      internalID: -2071899517816939857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
