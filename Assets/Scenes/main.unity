@@ -2219,10 +2219,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec0a349865ced3f45838cd2293fb1139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocityStart: 1.2
-  velocityFinal: 2.5
-  incrementVelocity: 0.15
-  maxDistanceToPlumber: 15
+  velocityStart: 1
+  velocityFinal: 2
+  incrementVelocity: 0.1
+  maxDistanceToPlumber: 13
   velocity: 0
   isRising: 0
 --- !u!61 &1196876470
@@ -3312,7 +3312,7 @@ MonoBehaviour:
   - {fileID: 3830832157381974011, guid: 9aa962eb48dfbfa4d97a7b56278a92f0, type: 3}
   - {fileID: 3830832157381974011, guid: 7c8a7de0ef7ea5d4fb00fd1a5ea93eff, type: 3}
   TestHighestLowest: {fileID: 0}
-  EnableTestModuleList: 0
+  EnableTestModuleList: 1
   TestModules:
   - {fileID: 3830832157381974011, guid: 568a84f3b6ce1d24d97c21a039af212a, type: 3}
   - {fileID: 3830832157381974011, guid: 50956788306af0a4fb8246b7a56b1655, type: 3}

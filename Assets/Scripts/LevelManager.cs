@@ -42,19 +42,13 @@ public class LevelManager : MonoBehaviour
         }
 
         FillPool();
-        //SpawnNewModule();
+        SpawnNewModule(); //if(indexCurrentModule == -1)
     }
 
 
     void FixedUpdate()
     {
-        if (indexCurrentModule == -1)
-        {
-            if (SpawnTrigger.transform.position.y >= StartModule.transform.Find("LowestPoint").position.y)
-                SpawnNewModule();
-            return;
-        }
-        else if (SpawnTrigger.transform.position.y >= modulePool[indexCurrentModule].transform.Find("LowestPoint").position.y)
+        if (SpawnTrigger.transform.position.y >= modulePool[indexCurrentModule].transform.position.y)
         {
             SpawnNewModule();
             if (acid.GetRising() == false)
