@@ -111,11 +111,13 @@ public class Plumber : MonoBehaviour
             Vector2 stretchRArmCollision = collisionPoint - (Vector2)rightArm.position;
             float angle = Vector2.SignedAngle(Vector2.up, stretchRArmCollision);
             //Debug.Log(angle);
-            angle += 5; //accounting for the angle difference from straight up
-            angle = Mathf.Clamp(angle, -100, 5);
+            angle -= 8; //accounting for the angle difference from straight up
+            Debug.Log("Angle RIGHT: " + angle);
+            angle = Mathf.Clamp(angle, -130, -8);
             rightArm.rotation = Quaternion.Euler(new Vector3(0,0,angle));
 
             attachedSide = 'r';
+            animator.SetBool("FacingLeft", true);
         } 
         else
         {
@@ -124,26 +126,29 @@ public class Plumber : MonoBehaviour
             Vector2 stretchLArmCollision = collisionPoint - (Vector2)leftArm.position;
             float angle = Vector2.SignedAngle(Vector2.up, stretchLArmCollision);
             //Debug.Log(angle);
-            angle -= 5; //accounting for the angle difference from straight up
-            angle = Mathf.Clamp(angle, -5, 100);
+            angle += 8; //accounting for the angle difference from straight up
+            Debug.Log("Angle LEFT: " + angle);
+            angle = Mathf.Clamp(angle, 8, 130);
             leftArm.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
             attachedSide = 'l';
+            animator.SetBool("FacingLeft", false);
         }
     }
 
+    const int standardArmsUpAngle = 8, maxArmsAngle = 130;
     public void orientArm(float launchAngle)
     {
         if (attachedSide == 'l')
         {
-            float angle = launchAngle + 5; //accounting for the angle difference from straight up
-            angle = Mathf.Clamp(angle, -100, 5);
+            float angle = launchAngle - 8; //accounting for the angle difference from straight up
+            angle = Mathf.Clamp(angle, -130, -8);
             rightArm.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         }
         else if (attachedSide == 'r')
         {
-            float angle = launchAngle - 5; //accounting for the angle difference from straight up
-            angle = Mathf.Clamp(angle, -5, 100);
+            float angle = launchAngle + 8; //accounting for the angle difference from straight up
+            angle = Mathf.Clamp(angle, 8, 130);
             leftArm.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         }
     }
@@ -158,8 +163,12 @@ public class Plumber : MonoBehaviour
         rBody.AddForce(launchVector);
         audioHandler.SetAndPlay("Launch");
         attached = false;
+        animator.SetBool("IsJumping", true);
+        if (directionalVector.x < 0)
+            animator.SetBool("FacingLeft", true);
+        else if (directionalVector.x > 0)
+            animator.SetBool("FacingLeft", false);
     }
-
 
     public void DamagePlumber(int damage)
     {
@@ -184,6 +193,7 @@ public class Plumber : MonoBehaviour
         {
             // Slime Obstacle Event here
             attached = true;
+            animator.SetBool("IsJumping", false);
             //Debug.LogError("SlimeCollision");
             rBody.velocity = Vector2.zero;
             orientArmsTowards(collision.contacts[0].point);
@@ -193,6 +203,7 @@ public class Plumber : MonoBehaviour
         {
             // Hitting a Wall
             attached = true;
+            animator.SetBool("IsJumping", false);
             rBody.constraints = RigidbodyConstraints2D.FreezeAll;
             rBody.velocity = new Vector2(0f, 0.1962f);//exakt ausgleichsgeschwindigkeit zu Gravity
             orientArmsTowards(collision.contacts[0].point);
@@ -203,7 +214,7 @@ public class Plumber : MonoBehaviour
             rBody.velocity = Vector2.zero;
             Vector2 path = collision.transform.parent.Find("LaunchDirection").transform.localPosition * 150;
             rBody.AddForce(path);
-            Debug.Log(path);
+            animator.SetBool("IsJumping", true);
         }
         
     }
@@ -231,6 +242,7 @@ public class Plumber : MonoBehaviour
                     Debug.Log("RESET attached");
                     startTimeCollision = currentTime;
                     attached = true;
+                    animator.SetBool("IsJumping", false);
                 }
             }
         }
