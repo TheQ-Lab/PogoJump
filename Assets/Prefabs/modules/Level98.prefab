@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d05de26a88e3f4c46926dfc6a2077f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biome: 0
+  biome: 1
 --- !u!1 &3830832157393203207
 GameObject:
   m_ObjectHideFlags: 0
