@@ -164,6 +164,7 @@ public class Plumber : MonoBehaviour
         audioHandler.SetAndPlay("Launch");
         attached = false;
         animator.SetBool("IsJumping", true);
+        animator.SetTrigger("LaunchSpring");
         if (directionalVector.x < 0)
             animator.SetBool("FacingLeft", true);
         else if (directionalVector.x > 0)
@@ -215,6 +216,7 @@ public class Plumber : MonoBehaviour
             Vector2 path = collision.transform.parent.Find("LaunchDirection").transform.localPosition * 150;
             rBody.AddForce(path);
             animator.SetBool("IsJumping", true);
+            animator.SetTrigger("LaunchSpring");
         }
         
     }
