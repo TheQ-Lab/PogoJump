@@ -20,6 +20,7 @@ public class Plumber : MonoBehaviour
     private Rigidbody2D rBody;
     private PlumberInput plumberInput;
     private AudioHandler audioHandler;
+    private MusicHandler bgmHandler;
     private Animator animator;
     private Transform rightArm, leftArm;
     private UiLives livesIcons;
@@ -37,6 +38,7 @@ public class Plumber : MonoBehaviour
         rBody = GetComponent<Rigidbody2D>();
         plumberInput = GetComponent<PlumberInput>();
         audioHandler = GetComponentInChildren<AudioHandler>();
+        bgmHandler = GetComponentInChildren<MusicHandler>();
         animator = GetComponent<Animator>();
 
         rightArm = transform.Find("ArmRight"); //transform.Find for children
@@ -83,6 +85,7 @@ public class Plumber : MonoBehaviour
         if (Lives <= 0) { 
             GameManager.Instance.GameOver();
             audioHandler.SetAndPlay("GameOver");
+            bgmHandler.SetAndPlay(MusicHandler.BGMType.GameOver);
         }
         wiggleCollider();
 
@@ -179,10 +182,14 @@ public class Plumber : MonoBehaviour
         {
             timerLastHit = 2.5f;
             audioHandler.SetAndPlay("Damage");
+            if (Lives == 1)
+                bgmHandler.SetAndPlay(MusicHandler.BGMType.Danger);
         } 
         else if(damage < 0)
         {
             audioHandler.SetAndPlay("ExtraLife");
+            if (bgmHandler.currentlyPlaying.bGMType == MusicHandler.BGMType.Danger)
+                bgmHandler.SetAndPlay(MusicHandler.BGMType.Cave);
         }
     }
 
