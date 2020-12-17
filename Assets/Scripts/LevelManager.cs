@@ -73,30 +73,32 @@ public class LevelManager : MonoBehaviour
     {
         GameObject currentModule;
         if (indexCurrentModule == -1)
-        {
             currentModule = StartModule;
-        }
         else
-        {
             currentModule = modulePool[indexCurrentModule];
-        }
         Vector2 highestPointPrev = (Vector2)currentModule.transform.Find("HighestPoint").position; //absolute/worldPos
+
         //calculate Index of new module
         int indexNewModule = indexCurrentModule;
         while (indexNewModule == indexCurrentModule)
-        {
             indexNewModule = Random.Range(0, modulePool.Count);
+
+        if(modulePool[indexNewModule].GetComponent<BiomeType>().biome == currentModule.GetComponent<BiomeType>().biome)
+            // No Biome change
+            AttatchModule(modulePool[indexNewModule], highestPointPrev);
+        else
+        {
+            //VORLÄUFIG
+            AttatchModule(modulePool[indexNewModule], highestPointPrev);
         }
-        AttatchModule(indexNewModule, highestPointPrev);
+
         ResetInteractiveModuleContent(indexNewModule);
         indexCurrentModule = indexNewModule;
         Debug.Log("Spawned Module #" + indexCurrentModule);
     }
 
-    private void AttatchModule(int ModuleIndex, Vector2 highestPointPrev)
+    private void AttatchModule(GameObject nextModule, Vector2 highestPointPrev)
     {
-        GameObject nextModule = modulePool[ModuleIndex];
-
         Vector2 lowestPointNext = (Vector2)nextModule.transform.Find("LowestPoint").localPosition * nextModule.transform.localScale; //relative to Parent Position * Parent Scale.y
         nextModule.transform.position = highestPointPrev - lowestPointNext;
 

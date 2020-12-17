@@ -112,7 +112,7 @@ public class Plumber : MonoBehaviour
             float angle = Vector2.SignedAngle(Vector2.up, stretchRArmCollision);
             //Debug.Log(angle);
             angle -= 8; //accounting for the angle difference from straight up
-            Debug.Log("Angle RIGHT: " + angle);
+            //Debug.Log("Angle RIGHT: " + angle);
             angle = Mathf.Clamp(angle, -130, -8);
             rightArm.rotation = Quaternion.Euler(new Vector3(0,0,angle));
 
@@ -127,7 +127,7 @@ public class Plumber : MonoBehaviour
             float angle = Vector2.SignedAngle(Vector2.up, stretchLArmCollision);
             //Debug.Log(angle);
             angle += 8; //accounting for the angle difference from straight up
-            Debug.Log("Angle LEFT: " + angle);
+            //Debug.Log("Angle LEFT: " + angle);
             angle = Mathf.Clamp(angle, 8, 130);
             leftArm.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
