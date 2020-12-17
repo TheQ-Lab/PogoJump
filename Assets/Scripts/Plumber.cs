@@ -217,14 +217,7 @@ public class Plumber : MonoBehaviour
             orientArmsTowards(collision.contacts[0].point);
             audioHandler.SetAndPlay("Land");
         }
-        else if (collision.transform.name == "MushroomCollider")
-        {
-            rBody.velocity = Vector2.zero;
-            Vector2 path = collision.transform.parent.Find("LaunchDirection").transform.localPosition * 150;
-            rBody.AddForce(path);
-            animator.SetBool("IsJumping", true);
-            animator.SetTrigger("LaunchSpring");
-        }
+        
         
     }
 
@@ -273,10 +266,12 @@ public class Plumber : MonoBehaviour
         {
             attached = false;
             plumberInput.LockLaunch();
-        }/*
+        }
+        /*
         else if (collision.collider.name == "WallLevel")
         {
-            //attached = false;
+            attached = false;
+            plumberInput.LockLaunch();
         }*/
     }
 
@@ -300,6 +295,14 @@ public class Plumber : MonoBehaviour
             timerPowerUp = 10f;
             collision.transform.parent.gameObject.SetActive(false);
             audioHandler.SetAndPlay("PowerUp");
+        }
+        else if (collision.transform.name == "MushroomCollider")
+        {
+            rBody.velocity = Vector2.zero;
+            Vector2 path = collision.transform.parent.Find("LaunchDirection").transform.localPosition * 150;
+            rBody.AddForce(path);
+            animator.SetBool("IsJumping", true);
+            animator.SetTrigger("LaunchSpring");
         }
 
         if (timerLastHit>0)

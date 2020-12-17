@@ -1160,7 +1160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &601001639
 Transform:
   m_ObjectHideFlags: 0
@@ -3312,9 +3312,8 @@ MonoBehaviour:
   TestHighestLowest: {fileID: 1708276462}
   EnableTestModuleList: 0
   TestModules:
-  - {fileID: 3830832157381974011, guid: 568a84f3b6ce1d24d97c21a039af212a, type: 3}
-  - {fileID: 3830832157381974011, guid: 50956788306af0a4fb8246b7a56b1655, type: 3}
-  - {fileID: 3830832157381974011, guid: 9aa962eb48dfbfa4d97a7b56278a92f0, type: 3}
+  - {fileID: 3830832157381974011, guid: a8ad07f2609a9aa4fae2b7eea0a13bca, type: 3}
+  - {fileID: 3830832157381974011, guid: 9670b6eb03523374c9c6b298e36f8410, type: 3}
   SpawnTrigger: {fileID: 1299645942}
   acid: {fileID: 1196876469}
   transitionPool: []
