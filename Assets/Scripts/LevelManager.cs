@@ -4,11 +4,34 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    [System.Serializable]
+    public class Transition
+    {
+        public GameObject transitionModule;
+        public BiomeType.Biome biomeLower;
+        public BiomeType.Biome biomeUpper;
+
+        public Transition(GameObject _transitionModule, BiomeType.Biome _biomeLower, BiomeType.Biome _biomeUpper)
+        {
+            transitionModule = _transitionModule;
+            biomeLower = _biomeLower;
+            biomeUpper = _biomeUpper;
+        }
+
+        public static Transition zero()
+        {
+            Transition ret = new Transition(null, BiomeType.Biome.Cave, BiomeType.Biome.Jungle);
+            return ret;
+        }
+    }
+
     [Header("Modules")]
     [Tooltip("The Instance of the already present at Startup StartModule must be here")]
     public GameObject StartModule;
     [Tooltip("All Levels that are instantiated and spawned")]
     public List<GameObject> ModulePrefabs;
+    [Tooltip("All Transitions between LevelModules")]
+    public List<Transition> Transitions;
     
     [Header("Testing/Debugging")]
     [Tooltip("For one time use of in Editor instantiated and at (0,0,0) positioned Module, or its WalllLevel Object - [CAN BE LEFT EMPTY during normal Runtime]")]
@@ -24,6 +47,7 @@ public class LevelManager : MonoBehaviour
     public Acid acid;
 
     private List<GameObject> modulePool = new List<GameObject>();
+    public List<Transition> transitionPool = new List<Transition>();
     private int indexCurrentModule = -1;
     
     void Start()
@@ -41,7 +65,7 @@ public class LevelManager : MonoBehaviour
             }
         }
 
-        FillPool();
+        FillPools();
         SpawnNewModule(); //if(indexCurrentModule == -1)
     }
 
@@ -58,13 +82,20 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    private void FillPool()
+    private void FillPools()
     {
         foreach(GameObject prefab in ModulePrefabs)
         {
             GameObject newModule = Instantiate(prefab, new Vector3(0f, -100f, 0f), Quaternion.identity);
             modulePool.Add(newModule);
             newModule.SetActive(false);
+        }
+
+        foreach(Transition transition in Transitions)
+        {
+            GameObject newTransitionObject = Instantiate(transition.transitionModule, new Vector3(0f, -100f, 0f), Quaternion.identity);
+            transitionPool.Add(new Transition(newTransitionObject, transition.biomeLower, transition.biomeUpper));
+            newTransitionObject.SetActive(false);
         }
     }
 
@@ -89,6 +120,22 @@ public class LevelManager : MonoBehaviour
         else
         {
             //VORLÄUFIG
+            BiomeType.Biome biomeLower = currentModule.GetComponent<BiomeType>().biome;
+            BiomeType.Biome biomeUpper = modulePool[indexNewModule].GetComponent<BiomeType>().biome;
+
+            Transition newTransition = Transition.zero();
+            foreach(Transition t in transitionPool)
+            {
+                if(t.biomeLower == biomeLower && t.biomeUpper == biomeUpper)
+                {
+                    newTransition = t;
+                    break;
+                }
+            }
+
+            AttatchModule(newTransition.transitionModule, highestPointPrev);
+            highestPointPrev = newTransition.transitionModule.transform.Find("HighestPoint").position;
+
             AttatchModule(modulePool[indexNewModule], highestPointPrev);
         }
 

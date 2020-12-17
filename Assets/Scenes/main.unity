@@ -3242,6 +3242,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1708276462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3830832155737730834, guid: 1912d79e325aad74a9728acbacdf7286, type: 3}
+  m_PrefabInstance: {fileID: 585964875}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1715386779
 GameObject:
   m_ObjectHideFlags: 0
@@ -3285,7 +3290,26 @@ MonoBehaviour:
   - {fileID: 3830832157381974011, guid: 9aa962eb48dfbfa4d97a7b56278a92f0, type: 3}
   - {fileID: 3830832157381974011, guid: a8ad07f2609a9aa4fae2b7eea0a13bca, type: 3}
   - {fileID: 3830832157381974011, guid: 9670b6eb03523374c9c6b298e36f8410, type: 3}
-  TestHighestLowest: {fileID: 0}
+  Transitions:
+  - transitionModule: {fileID: 8951875084195484708, guid: a0bd59c8f0f712f44acff7121de9c4e0, type: 3}
+    biomeLower: 0
+    biomeUpper: 1
+  - transitionModule: {fileID: 8951875084195484708, guid: 19e45d9b2a16d444caa3a4471471db3b, type: 3}
+    biomeLower: 0
+    biomeUpper: 2
+  - transitionModule: {fileID: 8951875084195484708, guid: 2cd00c494a1cde241a2a66484a96757d, type: 3}
+    biomeLower: 1
+    biomeUpper: 0
+  - transitionModule: {fileID: 8951875084195484708, guid: a17e21b59a7bd464993fdffe360cfada, type: 3}
+    biomeLower: 1
+    biomeUpper: 2
+  - transitionModule: {fileID: 8951875084195484708, guid: cd1839515ac08cc46a74f5950fee8442, type: 3}
+    biomeLower: 2
+    biomeUpper: 0
+  - transitionModule: {fileID: 8951875084195484708, guid: d2ad6c3902c211e47a0fbcd3272f9868, type: 3}
+    biomeLower: 2
+    biomeUpper: 1
+  TestHighestLowest: {fileID: 1708276462}
   EnableTestModuleList: 0
   TestModules:
   - {fileID: 3830832157381974011, guid: 568a84f3b6ce1d24d97c21a039af212a, type: 3}
@@ -3293,6 +3317,7 @@ MonoBehaviour:
   - {fileID: 3830832157381974011, guid: 9aa962eb48dfbfa4d97a7b56278a92f0, type: 3}
   SpawnTrigger: {fileID: 1299645942}
   acid: {fileID: 1196876469}
+  transitionPool: []
 --- !u!4 &1715386781
 Transform:
   m_ObjectHideFlags: 0
@@ -3355,23 +3380,23 @@ MonoBehaviour:
   - name: Cave
     bGMType: 0
     audioClip: {fileID: 8300000, guid: da62658fb5057e34b86846fd6622e9d0, type: 3}
-    volume: 0.21
+    volume: 0.19
   - name: Jungle
     bGMType: 1
     audioClip: {fileID: 8300000, guid: 27af9f0100e212e4e83c71fa715eec5d, type: 3}
-    volume: 0.21
+    volume: 0.19
   - name: Mushroom
     bGMType: 2
     audioClip: {fileID: 8300000, guid: 61c27d21c295b8e4f8672044a466e243, type: 3}
-    volume: 0.21
+    volume: 0.19
   - name: Danger
     bGMType: 3
     audioClip: {fileID: 8300000, guid: 912ade9458a6c0a4fb40e96d7f102752, type: 3}
-    volume: 0.22
+    volume: 0.19
   - name: GameOver
     bGMType: 4
     audioClip: {fileID: 8300000, guid: b716e1b5c26c63046889db937190267e, type: 3}
-    volume: 0.21
+    volume: 0.19
   currentlyPlaying:
     name: 
     bGMType: 0
@@ -3924,11 +3949,13 @@ MonoBehaviour:
   - {fileID: 3830832157381974011, guid: 86836fdb9c88eb64aabe52533e580ffe, type: 3}
   - {fileID: 3830832157381974011, guid: 7a163ba90a5d48b44a1b9db37b139dcd, type: 3}
   - {fileID: 3830832157381974011, guid: 22aaa811dc079834ba48561f77a1af41, type: 3}
+  Transitions: []
   TestHighestLowest: {fileID: 0}
   EnableTestModuleList: 0
   TestModules: []
   SpawnTrigger: {fileID: 1299645942}
   acid: {fileID: 1196876469}
+  transitionPool: []
 --- !u!1 &2035998382
 GameObject:
   m_ObjectHideFlags: 0
