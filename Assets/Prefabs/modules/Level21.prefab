@@ -901,6 +901,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3830832157381974010}
     m_Modifications:
+    - target: {fileID: 3887395780355413339, guid: aa5da3dc15db62b4981f64ce1ff44c93, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887395780355413339, guid: aa5da3dc15db62b4981f64ce1ff44c93, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.95
+      objectReference: {fileID: 0}
     - target: {fileID: 3887395781253191087, guid: aa5da3dc15db62b4981f64ce1ff44c93, type: 3}
       propertyPath: m_Name
       value: Mushroom
@@ -1103,6 +1111,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3830832157381974010}
     m_Modifications:
+    - target: {fileID: 3887395780355413339, guid: aa5da3dc15db62b4981f64ce1ff44c93, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887395780355413339, guid: aa5da3dc15db62b4981f64ce1ff44c93, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3887395781253191087, guid: aa5da3dc15db62b4981f64ce1ff44c93, type: 3}
       propertyPath: m_Name
       value: Mushroom (1)

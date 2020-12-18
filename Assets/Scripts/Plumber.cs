@@ -300,7 +300,9 @@ public class Plumber : MonoBehaviour
         {
             rBody.velocity = Vector2.zero;
             Vector2 path = collision.transform.parent.Find("LaunchDirection").transform.localPosition * 150;
+            path = collision.transform.parent.rotation * path;
             rBody.AddForce(path);
+            audioHandler.SetAndPlay("Launch");
             animator.SetBool("IsJumping", true);
             animator.SetTrigger("LaunchSpring");
         }

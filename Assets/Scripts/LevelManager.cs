@@ -55,8 +55,8 @@ public class LevelManager : MonoBehaviour
         if (TestHighestLowest != null) GetHighestY(TestHighestLowest);
         if (EnableTestModuleList)
         {
-            if (TestModules.Count == 0)
-                Debug.LogWarning("No Module in TestModules, please fill TestModules with prefab(s) or set EnableTestModuleList false!");
+            if (TestModules.Count < 2)
+                Debug.LogWarning("No Module or only one in TestModules, please fill TestModules with prefab(s) or set EnableTestModuleList false!");
             else
             {
                 ModulePrefabs.Clear();
