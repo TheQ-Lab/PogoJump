@@ -25,6 +25,25 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    [System.Serializable]
+    public class BiomewiseModulePool
+    {
+        public BiomeType.Biome biome;
+        public List<GameObject> moduleSelection;
+
+        public BiomewiseModulePool(BiomeType.Biome _biome, List<GameObject> _moduleSelection)
+        {
+            biome = _biome;
+            moduleSelection = _moduleSelection;
+        }
+
+        public static BiomewiseModulePool zero()
+        {
+            BiomewiseModulePool ret = new BiomewiseModulePool(BiomeType.Biome.Cave, null);
+            return ret;
+        }
+    }
+
     [Header("Modules")]
     [Tooltip("The Instance of the already present at Startup StartModule must be here")]
     public GameObject StartModule;
@@ -32,6 +51,9 @@ public class LevelManager : MonoBehaviour
     public List<GameObject> ModulePrefabs;
     [Tooltip("All Transitions between LevelModules")]
     public List<Transition> Transitions;
+
+    [Tooltip("Probability")]
+    public List<int> TransitionProbabilityTable;
     
     [Header("Testing/Debugging")]
     [Tooltip("For one time use of in Editor instantiated and at (0,0,0) positioned Module, or its WalllLevel Object - [CAN BE LEFT EMPTY during normal Runtime]")]
@@ -46,8 +68,14 @@ public class LevelManager : MonoBehaviour
     public GameObject SpawnTrigger;
     public Acid acid;
 
+    [Header("Privates")]
     private List<GameObject> modulePool = new List<GameObject>();
-    public List<Transition> transitionPool = new List<Transition>();
+    [Header("Privates")]
+    public List<GameObject> cavePool = new List<GameObject>(), junglePool = new List<GameObject>(), mushroomPool = new List<GameObject>();
+    public BiomeType.Biome currentBiome = BiomeType.Biome.Cave;
+    public List<BiomeType.Biome> historyBiome = new List<BiomeType.Biome>();
+    public List<int> historyModules = new List<int>();
+    private List<Transition> transitionPool = new List<Transition>();
     private int indexCurrentModule = -1;
     
     void Start()
@@ -89,6 +117,18 @@ public class LevelManager : MonoBehaviour
             GameObject newModule = Instantiate(prefab, new Vector3(0f, -100f, 0f), Quaternion.identity);
             modulePool.Add(newModule);
             newModule.SetActive(false);
+
+            // assign to BiomewisePool
+            if (!EnableTestModuleList)
+            {
+                BiomeType.Biome newBiomeType = newModule.GetComponent<BiomeType>().biome;
+                if (newBiomeType == BiomeType.Biome.Cave)
+                    cavePool.Add(newModule);
+                else if (newBiomeType == BiomeType.Biome.Jungle)
+                    junglePool.Add(newModule);
+                else if (newBiomeType == BiomeType.Biome.Mushroom)
+                    mushroomPool.Add(newModule);
+            }
         }
 
         foreach(Transition transition in Transitions)
@@ -111,8 +151,15 @@ public class LevelManager : MonoBehaviour
 
         //calculate Index of new module
         int indexNewModule = indexCurrentModule;
-        while (indexNewModule == indexCurrentModule)
-            indexNewModule = Random.Range(0, modulePool.Count);
+        if (!EnableTestModuleList)
+        {
+            indexNewModule = DetermineNextModuleIndex();
+        }
+        else
+        {
+            while (indexNewModule == indexCurrentModule)
+                indexNewModule = Random.Range(0, modulePool.Count);
+        }
 
         if(modulePool[indexNewModule].GetComponent<BiomeType>().biome == currentModule.GetComponent<BiomeType>().biome)
             // No Biome change
@@ -142,6 +189,78 @@ public class LevelManager : MonoBehaviour
         ResetInteractiveModuleContent(indexNewModule);
         indexCurrentModule = indexNewModule;
         Debug.Log("Spawned Module #" + indexCurrentModule);
+    }
+
+    private int DetermineNextModuleIndex()
+    {
+        int nextModuleIndexGlobal = 0;
+        int nextModuleIndexLocal = 0;
+        BiomeType.Biome nextBiome = currentBiome;
+
+        int transitionProbability = TransitionProbabilityTable[historyModules.Count];
+        Debug.LogWarning("lol");
+        int roll = Random.Range(0, 100);
+        if (roll < transitionProbability)
+        {
+            // initiate Biome Transition
+            while (nextBiome == currentBiome)
+            {
+                roll = Random.Range(1, 4);
+                if (roll == 1)
+                    nextBiome = BiomeType.Biome.Cave;
+                else if (roll == 2)
+                    nextBiome = BiomeType.Biome.Jungle;
+                else if (roll == 3)
+                    nextBiome = BiomeType.Biome.Mushroom;
+            }
+
+
+            historyModules.Clear();
+            historyBiome.Add(nextBiome);
+            currentBiome = nextBiome;
+            
+        }
+        
+        
+        bool invalidLevel = true;
+        while (invalidLevel)
+        {
+            nextModuleIndexLocal = Random.Range(0, GetCorrectBiomeList(currentBiome).Count);
+            invalidLevel = false;
+
+            for(int i=0; i < historyModules.Count; i++)
+            {
+                if (historyModules[i] == nextModuleIndexLocal)
+                    invalidLevel = true;
+            }
+
+        }
+        historyModules.Add(nextModuleIndexLocal);
+
+        for(int i = 0; i< modulePool.Count; i++)
+        {
+            GameObject o = modulePool[i];
+            if (GetCorrectBiomeList(currentBiome)[nextModuleIndexLocal].Equals(o))
+            {
+                nextModuleIndexGlobal = i;
+                break;
+            }
+        }
+
+
+        return nextModuleIndexGlobal;
+    }
+
+    private List<GameObject> GetCorrectBiomeList(BiomeType.Biome biome)
+    {
+        if (biome == BiomeType.Biome.Cave)
+            return cavePool;
+        else if (biome == BiomeType.Biome.Jungle)
+            return junglePool;
+        else if (biome == BiomeType.Biome.Mushroom)
+            return mushroomPool;
+        else
+            return null;
     }
 
     private void AttatchModule(GameObject nextModule, Vector2 highestPointPrev)

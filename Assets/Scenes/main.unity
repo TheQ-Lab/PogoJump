@@ -3194,7 +3194,6 @@ MonoBehaviour:
   - {fileID: 3830832157381974011, guid: 433a5ccfddeb9814b88d3cee95827b21, type: 3}
   - {fileID: 3830832157381974011, guid: 1b10e9e5149e8d2438e727d5e3c71ec0, type: 3}
   - {fileID: 3830832157381974011, guid: 86836fdb9c88eb64aabe52533e580ffe, type: 3}
-  - {fileID: 3830832157381974011, guid: 86836fdb9c88eb64aabe52533e580ffe, type: 3}
   - {fileID: 3830832157381974011, guid: 49f11c380d2a36644848afdb0d40e227, type: 3}
   - {fileID: 3830832157381974011, guid: a8ad07f2609a9aa4fae2b7eea0a13bca, type: 3}
   - {fileID: 3830832157381974011, guid: 5b003c470cc84be41a87bf73920e921f, type: 3}
@@ -3203,6 +3202,7 @@ MonoBehaviour:
   - {fileID: 3830832157381974011, guid: 22aaa811dc079834ba48561f77a1af41, type: 3}
   - {fileID: 3830832157381974011, guid: 568a84f3b6ce1d24d97c21a039af212a, type: 3}
   - {fileID: 3830832157381974011, guid: 50956788306af0a4fb8246b7a56b1655, type: 3}
+  - {fileID: 3830832157381974011, guid: 9aa962eb48dfbfa4d97a7b56278a92f0, type: 3}
   - {fileID: 3830832157381974011, guid: 9670b6eb03523374c9c6b298e36f8410, type: 3}
   - {fileID: 3830832157381974011, guid: 4acc9122ad0c64345ac979ad1107e0d3, type: 3}
   - {fileID: 3830832157381974011, guid: de8e1bc8484493c4e9f6875095c1e27c, type: 3}
@@ -3226,6 +3226,7 @@ MonoBehaviour:
   - transitionModule: {fileID: 8951875084195484708, guid: d2ad6c3902c211e47a0fbcd3272f9868, type: 3}
     biomeLower: 2
     biomeUpper: 1
+  TransitionProbabilityTable: 0000000000000000210000004200000064000000
   TestHighestLowest: {fileID: 1708276462}
   EnableTestModuleList: 0
   TestModules:
@@ -3233,7 +3234,12 @@ MonoBehaviour:
   - {fileID: 3830832157381974011, guid: a8ad07f2609a9aa4fae2b7eea0a13bca, type: 3}
   SpawnTrigger: {fileID: 1299645942}
   acid: {fileID: 1196876469}
-  transitionPool: []
+  cavePool: []
+  junglePool: []
+  mushroomPool: []
+  currentBiome: 0
+  historyBiome: 
+  historyModules: 
 --- !u!4 &1715386781
 Transform:
   m_ObjectHideFlags: 0
@@ -3805,7 +3811,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1994333667}
   - component: {fileID: 1994333666}
-  - component: {fileID: 1994333668}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3843,35 +3848,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1994333668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1994333665}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f7d1f2a6817ad4594a863f83470cca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StartModule: {fileID: 89997885}
-  ModulePrefabs:
-  - {fileID: 3830832157381974011, guid: 95014cb3f5a4f3141b2a39998b6e35ab, type: 3}
-  - {fileID: 3830832157381974011, guid: 72e9c0b5fddfeb14aaae35eabb06f6f9, type: 3}
-  - {fileID: 3830832157381974011, guid: 433a5ccfddeb9814b88d3cee95827b21, type: 3}
-  - {fileID: 3830832157381974011, guid: 34afd8c656b4c5340bab452de23627f8, type: 3}
-  - {fileID: 3830832157381974011, guid: 1b10e9e5149e8d2438e727d5e3c71ec0, type: 3}
-  - {fileID: 3830832157381974011, guid: 86836fdb9c88eb64aabe52533e580ffe, type: 3}
-  - {fileID: 3830832157381974011, guid: 7a163ba90a5d48b44a1b9db37b139dcd, type: 3}
-  - {fileID: 3830832157381974011, guid: 22aaa811dc079834ba48561f77a1af41, type: 3}
-  Transitions: []
-  TestHighestLowest: {fileID: 0}
-  EnableTestModuleList: 0
-  TestModules: []
-  SpawnTrigger: {fileID: 1299645942}
-  acid: {fileID: 1196876469}
-  transitionPool: []
 --- !u!1 &2035998382
 GameObject:
   m_ObjectHideFlags: 0
