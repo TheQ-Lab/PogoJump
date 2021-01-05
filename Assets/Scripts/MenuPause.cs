@@ -5,9 +5,16 @@ using UnityEngine.UI;
 
 public class MenuPause : MonoBehaviour
 {
+    
     private void Start()
     {
         transform.Find("VolumeSlider").GetComponent<Slider>().value = GameManager.Instance.VolumeMultiplier;
+        
+    }
+
+    public void OnCallPause()
+    {
+        transform.Find("VolumeApplyText").gameObject.SetActive(false);
     }
 
     public void OnClickContinue()
