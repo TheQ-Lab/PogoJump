@@ -198,7 +198,6 @@ public class LevelManager : MonoBehaviour
         BiomeType.Biome nextBiome = currentBiome;
 
         int transitionProbability = TransitionProbabilityTable[historyModules.Count];
-        Debug.LogWarning("lol");
         int roll = Random.Range(0, 100);
         if (roll < transitionProbability)
         {

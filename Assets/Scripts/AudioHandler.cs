@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AudioHandler : MonoBehaviour
 {
+    private float volumeMultiplierLocal = 1f;
+
     [System.Serializable]
     public class SFXSample
     {
@@ -28,7 +30,6 @@ public class AudioHandler : MonoBehaviour
     }
 
 
-
     //public SFXSample LaunchMusic, LandMusic, DamageMusic, ExtraLifeMusic, GameOverMusic;
     public List<SFXSample> sfx;
 
@@ -38,6 +39,11 @@ public class AudioHandler : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         currentlyPlaying = SFXSample.zero();
+    }
+
+    private void FixedUpdate()
+    {
+        UpdateVolumeMultiplier();
     }
 
     public void SetAndPlay(string type)
@@ -61,7 +67,7 @@ public class AudioHandler : MonoBehaviour
         if (newClip.priority >= currentlyPlaying.priority)
         {
             audioSource.clip = newClip.audioClip;
-            audioSource.volume = newClip.volume;
+            audioSource.volume = newClip.volume * volumeMultiplierLocal;
             currentlyPlaying = newClip;
         }
         else
@@ -74,5 +80,14 @@ public class AudioHandler : MonoBehaviour
     {
         audioSource.loop = false;
         audioSource.Play();
+    }
+
+    private void UpdateVolumeMultiplier()
+    {
+        if (volumeMultiplierLocal != GameManager.Instance.VolumeMultiplier)
+        {
+            volumeMultiplierLocal = GameManager.Instance.VolumeMultiplier;
+            audioSource.volume = currentlyPlaying.volume * volumeMultiplierLocal;
+        }
     }
 }

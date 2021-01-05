@@ -7,10 +7,12 @@ public class MenuInGame : MonoBehaviour
 {
     private Text scoreText;
     private int displayedScore = 0;
+    private PlumberInput plumberInput;
 
     private void Start()
     {
         scoreText = this.GetComponentInChildren<Text>();
+        plumberInput = GameObject.Find("Plumber").gameObject.GetComponent<PlumberInput>();
     }
 
     private void Update()
@@ -36,6 +38,7 @@ public class MenuInGame : MonoBehaviour
     public void OnClickPause()
     {
         Debug.Log("PAUSE GAME");
+        plumberInput.LockLaunch();
         GameManager.Instance.SetGameplayPause(true);
     }
 }

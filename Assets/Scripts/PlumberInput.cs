@@ -29,6 +29,8 @@ public class PlumberInput : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.IsGameplayActive == false)
+            return;
         if (plumber.attached)
         {
             InputHandlingFrogger();
@@ -37,6 +39,8 @@ public class PlumberInput : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GameManager.Instance.IsGameplayActive == false)
+            return;
         if (plumber.attached)
         {
             FixedInputHandlingFrogger();

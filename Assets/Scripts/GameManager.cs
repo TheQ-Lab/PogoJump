@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public bool IsGameplayActive = true;
     public bool IsGameOver = false;
     public int ScoreMultiplyer = 100;
+    public float VolumeMultiplier = 1f;
 
     private MenuGameOver menuGameOver;
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class MusicHandler : MonoBehaviour
 {
     public enum BGMType { Cave, Jungle, Mushroom, Danger, GameOver };
+    private float volumeMultiplierLocal = 1f;
 
     [System.Serializable]
     public class BGMSample
@@ -43,6 +44,11 @@ public class MusicHandler : MonoBehaviour
         SetAndPlay(BGMType.Cave);
     }
 
+    private void FixedUpdate()
+    {
+        UpdateVolumeMultiplier();
+    }
+
     public void SetAndPlay(BGMType newType)
     {
         BGMSample newClip = BGMSample.zero();
@@ -56,7 +62,7 @@ public class MusicHandler : MonoBehaviour
         }
 
         audioSource.clip = newClip.audioClip;
-        audioSource.volume = newClip.volume;
+        audioSource.volume = newClip.volume * volumeMultiplierLocal;
 
         currentlyPlaying = newClip;
         PlayClip();
@@ -65,5 +71,14 @@ public class MusicHandler : MonoBehaviour
     private void PlayClip()
     {
         audioSource.Play();
+    }
+
+    private void UpdateVolumeMultiplier()
+    {
+        if (volumeMultiplierLocal != GameManager.Instance.VolumeMultiplier)
+        {
+            volumeMultiplierLocal = GameManager.Instance.VolumeMultiplier;
+            audioSource.volume = currentlyPlaying.volume * volumeMultiplierLocal;
+        }
     }
 }
